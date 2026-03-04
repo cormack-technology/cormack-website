@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cormack | Digital Excellence</title>
+  <meta name="description" content="Cormack delivers cybersecurity, high performance computing, GPU infrastructure, enterprise storage, virtualization, datacenter design and advanced networking solutions.">
+  <meta name="keywords" content="HPC, Cybersecurity, GPU Computing, Datacenter, Enterprise Storage, Networking">
+  <meta name="author" content="Cormack Technologies">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cormack | Digital Excellence">
+  <meta property="og:description" content="Mission-critical digital infrastructure solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Basic Security Headers (Client-Side) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #e5e7eb;
+      background-color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo h1 {
+      color: #0f172a;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      font-size: 11px;
+      color: #6b7280;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #374151;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0f62fe;
+    }
+
+    .btn {
+      padding: 12px 26px;
+      background: #0f62fe;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0353e9;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 60px;
+      background: #ffffff;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 44px;
+      color: #0f172a;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #4b5563;
+      margin-bottom: 30px;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .hero-image img {
+      width: 520px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    section { padding: 100px 60px; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: #6b7280;
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 6px;
+      border: 1px solid #e5e7eb;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #0f62fe;
+      box-shadow: 0 10px 30px rgba(15, 98, 254, 0.1);
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+      background: #ffffff;
+    }
+
+    .about img {
+      width: 480px;
+      border-radius: 6px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    }
+
+    .cta {
+      text-align: center;
+      background: #0f62fe;
+      padding: 100px 20px;
+      color: white;
+    }
+
+    footer {
+      padding: 50px 60px;
+      border-top: 1px solid #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 14px;
+      background: #ffffff;
+    }
+
+    footer a {
+      color: #0f62fe;
+      text-decoration: none;
+    }
+
+    @media(max-width: 900px) {
+      header, .hero, section, footer { padding: 60px 20px; }
+      .hero { flex-direction: column; text-align: center; }
+      .hero-image { justify-content: center; margin-top: 40px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <h1>CORMACK</h1>
+    <span>Digital Excellence</span>
+  </div>
+  <nav>
+    <a href="#solutions">Solutions</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Digital Excellence for Mission-Critical Infrastructure</h2>
+    <p>
+      Cormack delivers advanced cybersecurity, high performance computing,
+      GPU-based platforms, storage architecture, virtualization,
+      datacenter development, and next-generation networking.
+    </p>
+    <a href="#solutions" class="btn">Explore Solutions</a>
+  </div>
+
+  <div class="hero-image">
+    <img loading="lazy"
+         src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
+         alt="High Performance Computing Data Center">
+  </div>
+</section>
+
+<section id="solutions">
+  <div class="section-title">
+    <h2>Our Capabilities</h2>
+    <p>Built for performance, scalability, and security.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Cybersecurity</h3>
+      <p>Enterprise-grade security architecture and risk mitigation strategies.</p>
+    </div>
+
+    <div class="card">
+      <h3>High Performance & GPU Computing</h3>
+      <p>Deployment of HPC clusters and GPU-powered AI infrastructure.</p>
+    </div>
+
+    <div class="card">
+      <h3>Enterprise Storage</h3>
+      <p>Scalable, high-availability storage for mission-critical workloads.</p>
+    </div>
+
+    <div class="card">
+      <h3>Virtualization</h3>
+      <p>Optimized virtualization environments for operational efficiency.</p>
+    </div>
+
+    <div class="card">
+      <h3>Datacenter Design & Build</h3>
+      <p>Complete datacenter infrastructure planning and deployment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Advanced Networking</h3>
+      <p>Secure, resilient and high-speed enterprise network solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <h2>About Cormack</h2>
+    <p>
+      Cormack is a technology-driven enterprise delivering secure,
+      scalable, and high-performance digital infrastructure solutions.
+    </p>
+    <br />
+    <p>
+      We specialize in cybersecurity, GPU-based computing, HPC deployments,
+      enterprise storage, virtualization, datacenter development,
+      and advanced networking.
+    </p>
+  </div>
+  <img loading="lazy" src="https://images.unsplash.com/photo-1629654297299-c8506221ca97" alt="Server Infrastructure" />
+</section>
+
+<section class="cta">
+  <h2>Ready to Engineer the Future?</h2>
+  <p>Partner with Cormack to accelerate secure digital transformation.</p>
+  <br />
+  <a href="mailto:admin@cormack.in" class="btn" style="background:white;color:#0f62fe;">Contact Us</a>
+</section>
+
+<footer id="contact">
+  <div>
+    <strong style="color:#0f172a;">CORMACK</strong><br />
+    © 2026 Cormack Technologies. All rights reserved.<br />
+    Email: <a href="mailto:admin@cormack.in">admin@cormack.in</a>
+  </div>
+</footer>
+
+</body>
+</html>
